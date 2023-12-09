@@ -1,0 +1,31 @@
+.fc .fc-button-primary {
+  color: #ffffff !important;
+  background-color: #f26522 !important;
+  border-color: #ffffff !important;
+  border: 0px !important;
+}
+
+.fc .fc-daygrid-day {
+  /* background: #f2642292 !important; */
+  /* color: #ffffff !important; */
+  cursor: pointer;
+}
+
+.fc-day-past {
+  background-color: #f0f0f0 !important; /* Gray out the day */
+  pointer-events: none; /* Disable click events for the day */
+  cursor: not-allowed; /* Make the day cursor look inactive */
+}
+
+/* .fc .fc-daygrid-day.fc-day .fc-daygrid-day-top {
+  background: #2E1A46 !important;
+  color: #ffffff !important;
+  height: 30px !important;
+} */
+
+/* .fc .fc-event {
+  background-color: #f26522 !important;
+  border-color: #f26522 !important;
+  color: #ffffff !important;
+  cursor: pointer;
+} */
