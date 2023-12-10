@@ -5,23 +5,22 @@ import {
   List,
   ListItem,
   ListItemPrefix,
-  // ListItemSuffix,
-  // Chip,
+  ListItemSuffix,
+  Chip,
   Alert,
 } from "@material-tailwind/react";
 import ViewModuleIcon from "@mui/icons-material/ViewModule";
-// import SettingsIcon from "@mui/icons-material/Settings";
+import SettingsIcon from "@mui/icons-material/Settings";
 import MeetingRoomIcon from "@mui/icons-material/MeetingRoom";
 import HomeIcon from "@mui/icons-material/Home";
 import LogoutIcon from "@mui/icons-material/Logout";
 import { NavLink, useNavigate } from "react-router-dom";
 import LogoUJ from "../images/uj.png";
-// import Logout from "../images/logout.png";
 import { useAuth } from "../../context/AuthContext";
 import { doc, onSnapshot } from "firebase/firestore";
 import { db } from "../../firebase/configFirebase";
 import GoodMorning from "../images/goodmorning.gif";
-// import useAuthUser from "../../student/utils/useAuthUser";
+import useAuthUser from "../../student/utils/useAuthUser";
 import { PeopleAlt } from "@mui/icons-material";
 
 function Sidebar() {
