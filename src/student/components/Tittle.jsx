@@ -1,7 +1,7 @@
 import React, { useContext, useState } from 'react'
 import MoreVertIcon from '@mui/icons-material/MoreVert';
 import { MoreVert } from '@mui/icons-material';
-import ClickOutComponent from "react-onclickout";
+// import ClickOutComponent from "react-onclickout";
 import storeApi from '../utils/storeApi';
 function Tittle({title,listId}) {
     const [open, setOpen] = useState(false);
@@ -35,9 +35,9 @@ function Tittle({title,listId}) {
                 <MoreVertIcon />
                 {
                     openOptions && (
-                        <ClickOutComponent onCliclout={(e)=>{
-                            setOpenOptions(prev=>!prev);
-                        }}>
+                        // <ClickOutComponent onCliclout={(e)=>{
+                        //     setOpenOptions(prev=>!prev);
+                        // }}>
                             <ul className='absolute right-0  bg-[#ddd] border-2 z-50 list-none cursor-default'>
                                 <li className=' w-full px-4 py-2 text-lg hover:bg-white' onClick={()=>{
                                     setOpenOptions((curr)=>!curr);
@@ -52,7 +52,7 @@ function Tittle({title,listId}) {
                                     Edit Card title
                                 </li>
                             </ul>
-                        </ClickOutComponent>
+                        // </ClickOutComponent>
                     )
                 }
             </button>
